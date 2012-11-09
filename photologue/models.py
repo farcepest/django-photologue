@@ -3,12 +3,20 @@ import random
 import shutil
 import zipfile
 
+<<<<<<< HEAD
 try:
     from django.utils.timezone import now
 except ImportError:
     import datetime
     now = datetime.datetime.now
     
+=======
+from datetime import datetime
+try:
+    from django.utils.timezone import now
+except ImportError:
+    now = datetime.now
+>>>>>>> jdriscoll/master
 from inspect import isclass
 
 from django.db import models
